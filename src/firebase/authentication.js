@@ -9,7 +9,15 @@ function loginWithGoogle() {
     signInWithPopup(auth, provider)
     .then((result)=>{
         console.log('result', result);
-        user.value= result.user
+        let newUser = {
+            displayName: result.user.displayName,
+            photoURL: result.user.photoURL,
+            email: result.user.email,
+        }
+        localStorage.setItem('user',JSON.stringify(newUser))
+        user.value = {
+            ...newUser
+        }
     })
     .catch((error)=>{
         console.warn('error', error);
@@ -18,7 +26,8 @@ function loginWithGoogle() {
 
 function logout(){
     signOut(auth).then(() => {
-
+        user.value = null;
+        localStorage.setItem('user',null)
       }).catch((error) => {
 
       });

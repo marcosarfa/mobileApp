@@ -1,9 +1,9 @@
 <template>
 
-    <div class="text-center my-3">
-        <h2>Work with Us</h2>
+    <div class="d-flex justify-content-center my-3">
+        <h2 class="text-center">Work with Us</h2>
     </div>
-    <form class="container">
+    <form class="container p-3 my-3">
         <div class="mb-3">
             <label for="Name" class="form-label">Name</label>
             <input type="text" class="form-control" id="name" required>
@@ -22,13 +22,37 @@
             <input type="password" class="form-control" id="exampleInputPassword1" required>
         </div>
         <div class="text-center">
-        <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </div>
     </form>
+
+    <img src="https://www.pm4ngos.org/wp-content/uploads/2019/11/National_Thank_You_Day.png" alt="">
 
 </template>
 <style scoped>
 
+label{
+    color: white;
+}
 
-    
+h2 {
+    background-color: green;
+    width: 70vw;
+    border-radius: 16px;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em black
+}
+
+form{
+    background-image: url(https://besthqwallpapers.com/Uploads/18-4-2017/15269/morning-run-healthy-lifestyle-morning-runners-athlete.jpg);
+    background-size: cover;
+    border-radius: 20px;
+}
+
+img{
+    max-width: 100vw;
+    border-radius: 20px;
+    background-image: url(https://fondosmil.com/fondo/6594.jpg);
+    background-size: cover;
+}
 </style>

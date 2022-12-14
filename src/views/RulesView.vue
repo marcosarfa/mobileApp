@@ -2,14 +2,14 @@
 <template>
     <div class="container d-flex justify-content-center align-items-center p-3">
         <h2>Rules & Policies</h2>
-        <img src="../assets/img/alarm.png" alt="">
+        <img id="alarm" src="../assets/img/alarm.png" alt="">
     </div>
     <div class="container">
         <p>
 
         </p>
 
-        <div class="accordion" id="accordionExample">
+        <div class="accordion my-3" id="accordionExample">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -86,10 +86,11 @@
             
         </div>
 
+        <img class="container my-3" src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2014/10/24/14141747606969.jpg" alt="">
     </div>
 </template>
 <style scoped>
-img {
+#alarm {
     width: 15%;
 }
 </style>
