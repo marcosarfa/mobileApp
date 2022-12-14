@@ -60,9 +60,6 @@ import user from '../store/profile';
                         <router-link to="/">Home</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link to="./upcoming">Upcoming Events</router-link>
-                    </li>
-                    <li class="nav-item">
                         <router-link to="./rules">Rules & Policies</router-link>
                     </li>
                     <li class="nav-item">

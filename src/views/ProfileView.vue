@@ -12,7 +12,7 @@ const changeP= () =>{
 
 <template>
   <div class="text-center my-3">
-    <img :src="user ? user.photoURL : 'https://picsum.photos/200'">
+    <img id="user" :src="user ? user.photoURL : 'https://picsum.photos/200'">
   </div>
   <div class="container d-flex justify-content-center flex-wrap">
     <div class="col-auto">
@@ -24,9 +24,11 @@ const changeP= () =>{
     </div>
 
   </div>
-</template>
+  <img class="container" src="https://media.istockphoto.com/id/1192837450/vector/under-construction-site-banner-sign-vector-black-and-yellow-diagonal-stripes-under.jpg?s=612x612&w=0&k=20&c=UJl_uhpxStWki_A-rII3fG_Kjp1-KKcjhHNpkCOvYwA=" alt="">
+  <img class="container" src="https://media.istockphoto.com/id/1192837450/vector/under-construction-site-banner-sign-vector-black-and-yellow-diagonal-stripes-under.jpg?s=612x612&w=0&k=20&c=UJl_uhpxStWki_A-rII3fG_Kjp1-KKcjhHNpkCOvYwA=" alt="">
+  </template>
 <style scoped>
-img {
+#user {
   vertical-align: middle;
   width: 50vw;
   border-radius: 50%;

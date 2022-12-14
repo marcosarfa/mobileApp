@@ -11,7 +11,7 @@ import { logout } from '../firebase/authentication.js';
                     alt="" /></RouterLink>
             </button>
             <router-link to="./profile"><img class="user" :src="user? user.photoURL : 'https://picsum.photos/200'" alt=""></router-link>
-            <router-link to="/"><img class="user" src="../assets/img/fav.png" alt="favs"></router-link>
+            <router-link to="./favs"><img class="user" src="../assets/img/fav.png" alt="favs"></router-link>
             <router-link to="./help"><img class="user" src="../assets/img/question.png" alt=""></router-link>
             <a @click="logout" href=""><img class="user" src="../assets/img/logout.png" alt=""></a>
         </div>
