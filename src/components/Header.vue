@@ -45,7 +45,7 @@ import user from '../store/profile';
                             <div class="text-center">
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
-                            <div class="text-center">
+                            <div class="text-center my-3">
                                 <button  @click="loginWithGoogle" class="btn btn-primary">Login with Google</button>
                             </div>
                         </form>
@@ -95,5 +95,13 @@ li {
 
 button img {
     width: 75%;
+}
+@media (orientation:landscape){
+    nav{
+    left: 0;
+    width: 10vw !important;
+    gap: 3rem;
+    height: 100vh;
+  }
 }
 </style>

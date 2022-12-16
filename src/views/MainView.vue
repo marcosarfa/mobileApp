@@ -8,48 +8,52 @@ const posts = ref([])
 
 </script>
 <template>
-  <div id="start">
-    <h1 class="text-center mt-3">Welcome to H&F-Tec!</h1>
+  <div id="primary">
+    <div id="start">
+      <h1 class="text-center mt-3">Welcome to H&F-Tec!</h1>
 
-  </div>
-  <!-- <img data-aos="fade-up" class="container mb-3"
+    </div>
+    <!-- <img data-aos="fade-up" class="container mb-3"
     src="https://cdn.bioguia.com/embed/e3daa9e79ef76e4f4a5fa67f730f26a11606949145/HOME-DOCUMENTAL.jpg" alt=""> -->
-  <div id="presentation" class="container row align-content-center m-0">
-    <p class="col-6 ms-2"><strong> The best place to find information about the your body care</strong></p>
-  </div>
+    <div id="presentation" class="container row align-content-center m-0">
+      <p class="col-6 ms-2"><strong> The best place to find information about the your body care</strong></p>
+    </div>
 
-  <div class="container text-center my-2 d-flex flex-column justify-content-center align-items-center">
-    <h3>Here you can find posts about</h3>
-    <div class="row ms-1">
-      <div class="col-6 m-1 posts" id="posts1">
-        <p class="mt-4"><strong>Strengthening</strong></p>
-      </div>
-      <div class="col-6 m-1 posts" id="posts2">
-        <p class="mt-4"><strong>Streching</strong></p>
-      </div>
-      <div class="col-6 m-1 posts" id="posts3">
-        <p class="mt-4"><strong>Feeding</strong></p>
-      </div>
-      <div class="col-6 m-1 posts" id="posts4">
-        <p class="mt-4"><strong>Recovery</strong></p>
-      </div>
+    <div class="container text-center my-2 d-flex flex-column justify-content-center align-items-center">
+      <h3>Here you can find posts about</h3>
+      <div class="row ms-1">
+        <div class="col-6 m-1 posts" id="posts1">
+          <p class="mt-4"><strong>Strengthening</strong></p>
+        </div>
+        <div class="col-6 m-1 posts" id="posts2">
+          <p class="mt-4"><strong>Streching</strong></p>
+        </div>
+        <div class="col-6 m-1 posts" id="posts3">
+          <p class="mt-4"><strong>Feeding</strong></p>
+        </div>
+        <div class="col-6 m-1 posts" id="posts4">
+          <p class="mt-4"><strong>Recovery</strong></p>
+        </div>
 
-      <!-- <a  class="col-6" id="posts" href=""><span><img src="https://s.yimg.com/ny/api/res/1.2/dODedlBy9iiUoNoSck9XlA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTMyMQ--/https://media.zenfs.com/es/men_s_health_es_614/bfef3236ed5c32e821639b369b9cec80" alt=""></span>strengthening</a>
+        <!-- <a  class="col-6" id="posts" href=""><span><img src="https://s.yimg.com/ny/api/res/1.2/dODedlBy9iiUoNoSck9XlA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTMyMQ--/https://media.zenfs.com/es/men_s_health_es_614/bfef3236ed5c32e821639b369b9cec80" alt=""></span>strengthening</a>
       <a  class="col-6" id="posts" href=""><span><img src="../assets/img/streching.jpeg" alt=""></span>streching</a>
       <a  class="col-6" id="posts" href=""><span><img src="../assets/img/feeding.jpeg" alt=""></span>feeding</a>
       <a  class="col-6" id="posts" href=""><span><img src="../assets/img/recovery.jpg" alt=""></span>recovery</a> -->
+      </div>
+    </div>
+    <div class="row d-flex justify-content-around my-2 align-items-top" id="aPosts">
+      <p class="col-6 mt-1">You can enter here to watch all the posts!.</p>
+      <button type="button" class="btn btn-primary h-25 col-3 mt-3"><router-link
+          to="./posts">Posts</router-link></button>
+    </div>
+    <div class="container d-flex flex-column justify-content-center my-2 align-items-center" id="work">
+      <p class="text-white align-self-start">You can contribute whit the page, only entering here and suscribing to
+        start
+        posting and sharing everything than can help others!</p>
+      <router-link to="./work"><button type="button"
+          class="btn btn-primary h-30 mb-5 ms-5 align-self-end"></button></router-link>
     </div>
   </div>
-  <div class="row d-flex justify-content-around my-2 align-items-top" id="aPosts">
-    <p class="col-6 mt-1">You can enter here to watch all the posts!.</p>
-    <button type="button" class="btn btn-primary h-25 col-3 mt-3"><router-link to="./posts">Posts</router-link></button>
-  </div>
-  <div class="container d-flex flex-column justify-content-center my-2 align-items-center" id="work">
-    <p class="text-white align-self-start">You can contribute whit the page, only entering here and suscribing to start
-      posting and sharing everything than can help others!</p>
-      <router-link to="./work"><button type="button" class="btn btn-primary h-30 mb-5 ms-5 align-self-end"></button></router-link>
-  </div>
-
 </template>
 <style scoped>
 a {
@@ -106,9 +110,9 @@ a {
   height: 25vh;
 }
 
-#presentation p{
+#presentation p {
   text-shadow: 0 0 0.2em white, 0 0 0.2em #87F,
-		0 0 0.2em #87F
+    0 0 0.2em #87F
 }
 
 #aPosts {
@@ -139,5 +143,14 @@ a {
 
 .row {
   --bs-gutter-x: 0;
+}
+
+@media (orientation:landscape) {
+  #primary {
+    top: 0;
+    width: 10vw !important;
+    gap: 3rem;
+    height: 100vh;
+  }
 }
 </style>

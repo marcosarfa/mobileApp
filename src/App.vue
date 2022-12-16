@@ -31,21 +31,20 @@ onMounted(()=>{
 </template>
 
 <style scoped>
-header {
-  z-index: 3;
-  width: 100%;
-  position: sticky;
-  top: 0%;
-  min-height: 7vh;
-}
-
-main{
-  min-height: 82.8vh;
-}
-
-footer {
-  position: sticky;
-  bottom: 0%;
-  min-height: 7vh;
+@media (orientation:landscape) {
+  header{
+    left: 0;
+    width: 10vw !important;
+    gap: 3rem;
+    height: 100vh;
+  }
+  main {
+    margin-left: 11%;
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    min-height: 100vh;
+    margin: 0;
+  }
 }
 </style>

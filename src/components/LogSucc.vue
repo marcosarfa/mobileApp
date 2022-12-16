@@ -34,4 +34,13 @@ button img {
     border-radius: 50%;
 
 }
+
+@media (orientation:landscape){
+    nav{
+    position: sticky;
+    min-height: 100vh;
+   left: 90%;
+   bottom: 15%;
+    }
+  }
 </style>

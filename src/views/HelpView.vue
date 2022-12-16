@@ -77,4 +77,13 @@
             </div>
         </div>
     </div>
+    <div class="d-flex justify-content-center">
+    <button type="button" class="btn btn-primary my-3"><router-link to="/">Home</router-link> </button>
+  </div>
 </template>
+<style scoped>
+a {
+    text-decoration: none;
+    color: white
+}
+</style>

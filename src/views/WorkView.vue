@@ -1,9 +1,24 @@
+<script setup>
+import Swal from 'sweetalert2'
+
+const send= ()=>{
+Swal.fire({
+  title: 'Received',
+  text: 'Thank you for contact us. We will be talking whit you in shortly',
+  imageUrl: 'https://as1.ftcdn.net/v2/jpg/02/39/28/68/1000_F_239286873_IrgtoLhws6GZf8Qr6I1XMzBxIBB4juSs.jpg',
+  imageWidth: 400,
+  imageHeight: 200,
+  imageAlt: 'Custom image',
+})
+}
+</script>
+
 <template>
 
     <div class="d-flex justify-content-center my-3">
         <h2 class="text-center">Work with Us</h2>
     </div>
-    <form class="container p-3 my-3">
+    <form @submit.prevent="send" class="container p-3 my-3">
         <div class="mb-3">
             <label for="Name" class="form-label">Name</label>
             <input type="text" class="form-control" id="name" required>
@@ -17,10 +32,7 @@
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
-        <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" required>
-        </div>
+
         <div class="text-center">
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>
